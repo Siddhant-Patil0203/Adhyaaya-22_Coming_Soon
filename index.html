@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adhyaaya'22</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/adhyaaya-logo-no tagline.png"
+    />
+
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- FONT -->
+    <link rel="stylesheet" href="./assets/font/Revamped/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/font/cyberpunk/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Monda"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="loader">
+      <video
+        src="./assets/img/loader.mp4"
+        id="loader_video"
+        autoplay
+        muted
+      ></video>
+    </div>
+
+    <main>
+      <img
+        class="alogo"
+        src="./assets/img/adhyaaya-logo-no tagline.png"
+        alt="logo"
+      />
+      <div class="card77">
+        <div class="pole1"></div>
+        <div class="pole2"></div>
+        <div class="maincard">
+          <h1>Coming Soon</h1>
+        </div>
+      </div>
+      <div class="maincontainer">
+        <div class="eastereggs">
+          <div class="square1"></div>
+          <div class="square2"></div>
+          <video
+            width="700px"
+            id="loopvideo"
+            onclick="document.getElementById('termspop').style.display='block'"
+            autoplay
+            muted
+            loop
+          >
+            <source
+              src="https://firebasestorage.googleapis.com/v0/b/fir-project-93f27.appspot.com/o/looped%20Background.mp4?alt=media&token=5ca39030-6657-4e78-b51b-5c55f3ff0f2d"
+              type="video/mp4"
+            />
+          </video>
+          <a
+            href="#"
+            onclick="document.getElementById('termspop').style.display='block'"
+            ><h2 class="expand">Click to expand</h2></a
+          >
+          <div class="square3"></div>
+        </div>
+
+        <div class="termspop" id="termspop">
+          <div class="termspop_content">
+            <video class="llq" autoplay muted loop>
+              <source
+                src="https://firebasestorage.googleapis.com/v0/b/fir-project-93f27.appspot.com/o/looped%20Background.mp4?alt=media&token=5ca39030-6657-4e78-b51b-5c55f3ff0f2d"
+                type="video/mp4"
+              />
+            </video>
+            <button
+              value="close"
+              class="close"
+              onclick="document.getElementById('termspop').style.display='none'"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+        <div class="maintitle">
+          <h1>Stay Tuned</h1>
+          <a href="#"><h2>CA - Portal</h2></a>
+          <div class="footer-sco">
+            <a href="mailto:adhyaaya.gcoen@gmail.com" target="_blank"
+              ><i
+                class="bx bx-envelope ss1"
+                id="socials11"
+                onmouseover="document.getElementById('socials11').className = 'bx bx-envelope bx-tada ss1';"
+                onmouseout="document.getElementById('socials11').className = 'bx bx-envelope ss1';"
+              ></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCQgGGoNJaQRxs5myAZTcbsQ"
+              target="_blank"
+              ><i
+                class="bx bxl-youtube ss1"
+                id="socials21"
+                onmouseover="document.getElementById('socials21').className = 'bx bxl-youtube bx-tada ss1';"
+                onmouseout="document.getElementById('socials21').className = 'bx bxl-youtube ss1';"
+              ></i
+            ></a>
+            <a href="https://www.instagram.com/adhyaaya.gcoen/" target="_blank"
+              ><i
+                class="bx bxl-instagram ss1"
+                id="socials31"
+                onmouseover="document.getElementById('socials31').className = 'bx bxl-instagram bx-tada ss1';"
+                onmouseout="document.getElementById('socials31').className = 'bx bxl-instagram ss1';"
+              ></i
+            ></a>
+            <a href="https://www.linkedin.com/company/adhyaaya/" target="_blank"
+              ><i
+                class="bx bxl-linkedin ss1"
+                id="socials41"
+                onmouseover="document.getElementById('socials41').className = 'bx bxl-linkedin bx-tada ss1';"
+                onmouseout="document.getElementById('socials41').className = 'bx bxl-linkedin ss1';"
+              ></i
+            ></a>
+            <a href="https://twitter.com/Adhyaaya_GCOEN" target="_blank"
+              ><i
+                class="bx bxl-twitter ss1"
+                id="socials51"
+                onmouseover="document.getElementById('socials51').className = 'bx bxl-twitter bx-tada ss1';"
+                onmouseout="document.getElementById('socials51').className = 'bx bxl-twitter ss1';"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mascot" id="mascot">
+        <video
+          src="./assets/img/mascot_message.mp4"
+          id="mascot_message"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
+
+    <script src="./assets/js/logic.js" type="module"></script>
+    <!-- JS END-->
+  </body>
+</html>

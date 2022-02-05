@@ -1,0 +1,315 @@
+/****************** Basic Css ******************/
+* {
+  box-sizing: border-box;
+  font-family: Monda;
+}
+html {
+  scroll-behavior: smooth;
+  cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"),
+    pointer;
+}
+
+body {
+  background: #161623;
+  background-repeat: repeat-y;
+}
+
+main {
+  width: auto;
+  overflow: hidden;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/****** Loader ******/
+#loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 100000000;
+}
+
+#loader_video {
+  height: 100vh;
+  width: 100vw;
+}
+/****** Loader End ******/
+
+/****** Scroll Bar ******/
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(252, 66, 190);
+}
+/****** Scroll Bar END ******/
+
+/****************** Basic Css End ******************/
+
+/****************** Logo ******************/
+.alogo {
+  position: relative;
+  width: 200px;
+  left: 150px;
+  margin-top: 16px;
+}
+/****************** Logo End ******************/
+
+/****************** Card77 ******************/
+.pole1 {
+  position: absolute;
+  background: #f16eab;
+  width: 2px;
+  height: 80px;
+  top: 0px;
+  right: 254px;
+}
+.pole2 {
+  position: absolute;
+  background: #f16eab;
+  width: 2px;
+  height: 80px;
+  top: 0px;
+  right: 110px;
+}
+
+.maincard {
+  width: 250px;
+  height: 107px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 29px;
+  right: 59px;
+  border-radius: 8px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(50px);
+  cursor: pointer;
+}
+
+.maincard h1 {
+  font-family: cyberpunkregular;
+  text-align: center;
+  color: aqua;
+  margin-top: 22px;
+}
+
+/****************** Card77 END ******************/
+
+/****************** MainContainer ******************/
+.maincontainer {
+  display: flex;
+}
+
+/*** Eastereggs ***/
+.eastereggs video {
+  position: relative;
+  margin: 95px 0px 20px 175px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.square1 {
+  width: 100px;
+  height: 100px;
+  background: #f16eab;
+  box-shadow: 0 0 5px #f16eab, 0 0 5px #f16eab, 0 0 -1px #f16eab,
+    0 0 5px #f16eab;
+  position: absolute;
+  left: 127px;
+  top: 181px;
+  z-index: 1;
+  opacity: 0.8;
+  animation-name: updown1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes updown1 {
+  0%,
+  100% {
+    top: 181px;
+  }
+  50% {
+    top: 176px;
+  }
+}
+.square2 {
+  width: 40px;
+  height: 40px;
+  background: #f16eab;
+  box-shadow: 0 0 5px #f16eab, 0 0 5px #f16eab, 0 0 -1px #f16eab,
+    0 0 5px #f16eab;
+  position: absolute;
+  left: 102px;
+  top: 163px;
+  z-index: 1;
+  opacity: 0.8;
+  /* animation-name: updown2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+}
+@keyframes updown2 {
+  0%,
+  100% {
+    top: 163px;
+  }
+  50% {
+    top: 156px;
+  }
+}
+.square3 {
+  width: 40px;
+  height: 40px;
+  background: #f16eab;
+  box-shadow: 0 0 5px #f16eab, 0 0 5px #f16eab, 0 0 -1px #f16eab,
+    0 0 5px #f16eab;
+  position: absolute;
+  left: 870px;
+  top: 610px;
+  z-index: 0;
+  opacity: 0.8;
+  animation-name: updown3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes updown3 {
+  0%,
+  100% {
+    top: 610px;
+  }
+  50% {
+    top: 605px;
+  }
+}
+
+.expand {
+  color: #fff;
+  font-family: revampedregular;
+  font-size: 1em;
+  font-weight: 100;
+  position: relative;
+  left: 612px;
+  bottom: 12px;
+}
+
+/** Expand Video **/
+.termspop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.termspop_content {
+  background: #000;
+  width: 100vw;
+  position: relative;
+  z-index: 13;
+  overflow: hidden;
+}
+
+.llq {
+  width: 100%;
+}
+.close {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 15px;
+  bottom: 250px;
+  left: 50%;
+  position: relative;
+}
+.close:hover {
+  opacity: 0.8;
+}
+/*** Eastereggs END ***/
+
+/*** Titles END ***/
+.maintitle {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  left: 241px;
+  top: 205px;
+}
+
+.maintitle h1 {
+  font-family: revampedregular;
+  font-size: 2.5em;
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+.maintitle a h2 {
+  color: aqua;
+  font-family: revampedregular;
+  font-size: 2em;
+  font-weight: 100;
+  padding-bottom: 40px;
+}
+
+.footer-sco a {
+  position: relative;
+  text-align: right;
+  color: #fff;
+  font-size: 2em;
+  margin: 20px 20px 20px 20px;
+}
+
+.footer-sco a:hover {
+  color: aqua;
+}
+/*** Titles END ***/
+
+/****************** MainContainer END ******************/
+
+/****************** Mascot ******************/
+.mascot {
+  width: 100vw;
+}
+
+#mascot_message {
+  width: 260px;
+  position: absolute;
+  z-index: -1;
+  left: 1193px;
+}
+
+/****************** Mascot END ******************/

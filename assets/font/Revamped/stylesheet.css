@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "revampedregular";
+  src: url("revamped-webfont.woff2") format("woff2"),
+    url("revamped-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
