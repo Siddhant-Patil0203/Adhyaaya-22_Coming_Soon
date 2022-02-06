@@ -1,5 +1,5 @@
 //? Loader
-const myTimeout = setTimeout(removeLoader, 100);
+const myTimeout = setTimeout(removeLoader, 6000);
 function removeLoader() {
   document.getElementById("loader").style.display = "none";
 }
@@ -141,22 +141,22 @@ loader.load(
 
       tl.to(gltf.scene.position, {
         //forward
-        x: 0.1,
+        x: 1.9,
         duration: 2,
         yoyo: true,
       });
 
       tl.to(gltf.scene.rotation, {
         //rotation
-        y: -2.7,
+        y: -2.9,
         duration: 1,
         yoyo: true,
       });
 
       tl.to(gltf.scene.rotation, {
         //rotation
-        y: -2.7,
-        duration: 5,
+        y: -2.9,
+        duration: 3,
         yoyo: true,
       });
 

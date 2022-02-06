@@ -143,7 +143,7 @@ a {
     0 0 5px #f16eab;
   position: absolute;
   left: 127px;
-  top: 181px;
+  top: 243px;
   z-index: 1;
   opacity: 0.8;
   animation-name: updown1;
@@ -154,10 +154,10 @@ a {
 @keyframes updown1 {
   0%,
   100% {
-    top: 181px;
+    top: 243px;
   }
   50% {
-    top: 176px;
+    top: 238px;
   }
 }
 .square2 {
@@ -168,13 +168,9 @@ a {
     0 0 5px #f16eab;
   position: absolute;
   left: 102px;
-  top: 163px;
+  top: 223px;
   z-index: 1;
   opacity: 0.8;
-  /* animation-name: updown2;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; */
 }
 @keyframes updown2 {
   0%,
@@ -192,8 +188,8 @@ a {
   box-shadow: 0 0 5px #f16eab, 0 0 5px #f16eab, 0 0 -1px #f16eab,
     0 0 5px #f16eab;
   position: absolute;
-  left: 870px;
-  top: 610px;
+  left: 866px;
+  top: 665px;
   z-index: 0;
   opacity: 0.8;
   animation-name: updown3;
@@ -204,10 +200,10 @@ a {
 @keyframes updown3 {
   0%,
   100% {
-    top: 610px;
+    top: 665px;
   }
   50% {
-    top: 605px;
+    top: 660px;
   }
 }
 
@@ -270,8 +266,13 @@ a {
   text-align: center;
   right: 200px;
   top: 205px;
+  display: flex;
 }
-
+.message {
+  position: absolute;
+  width: 300px;
+  right: 420px;
+}
 .maintitle h1 {
   font-family: revampedregular;
   font-size: 2.5em;
