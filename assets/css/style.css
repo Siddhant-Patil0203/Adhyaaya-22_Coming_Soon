@@ -11,7 +11,7 @@ html {
 
 body {
   background: url("../img/bg.png");
-  background-size: 100vw;
+  background-size: cover;
 }
 
 main {
@@ -77,6 +77,11 @@ a {
   margin-top: 16px;
   opacity: 0;
 }
+.mobile-logo {
+  display: none;
+  width: 230px;
+  margin: 70px;
+}
 /****************** Logo End ******************/
 
 /****************** Card77 ******************/
@@ -113,10 +118,11 @@ a {
 }
 
 .maincard h1 {
-  font-family: cyberpunkregular;
+  font-family: revampedregular;
   text-align: center;
   color: aqua;
-  margin-top: 22px;
+  margin-top: 38px;
+  font-size: 1.6em;
 }
 
 /****************** Card77 END ******************/
@@ -133,6 +139,7 @@ a {
   margin: 95px 0px 20px 175px;
   z-index: 1;
   cursor: pointer;
+  width: "700vw";
 }
 
 .square1 {
@@ -264,23 +271,36 @@ a {
   position: relative;
   color: #fff;
   text-align: center;
-  right: 200px;
+  right: 10%;
   top: 205px;
   display: flex;
+}
+.maintitle2 {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+.titlecontent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 .message {
   position: absolute;
   width: 300px;
-  right: 420px;
 }
-.maintitle h1 {
+.maintitle h1,
+.maintitle2 h1 {
   font-family: revampedregular;
   font-size: 2.5em;
   font-weight: 100;
   padding-bottom: 30px;
 }
 
-.maintitle a h2 {
+.maintitle a h2,
+.maintitle2 a h2 {
   color: aqua;
   font-family: revampedregular;
   font-size: 2em;
@@ -316,3 +336,67 @@ a {
 }
 
 /****************** Mascot END ******************/
+
+/****************** Responsive *****************/
+
+@media screen and (max-width: 1466px) {
+  .maintitle {
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 1318px) {
+  .maincontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .maintitle {
+    display: none;
+  }
+  .maintitle2 {
+    display: block;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  .eastereggs video {
+    position: relative;
+    margin: 65px 0px 20px 0px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .expand {
+    left: 512px;
+    bottom: 12px;
+  }
+  .square3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 826px) {
+  body {
+    background: rgb(8, 5, 44);
+    background-size: cover;
+  }
+  .square1,
+  .square2,
+  .mascot,
+  .alogo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+  .footer-sco a {
+    position: relative;
+    text-align: right;
+    color: #fff;
+    font-size: 2em;
+    margin: 20px 10px 20px 10px;
+  }
+  .eastereggs video {
+    width: 100%;
+  }
+}
+/****************** Responsive END *****************/
