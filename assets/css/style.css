@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  background: #161623;
-  background-repeat: repeat-y;
+  background: url("../img/bg.png");
+  background-size: 100vw;
 }
 
 main {
@@ -72,9 +72,10 @@ a {
 /****************** Logo ******************/
 .alogo {
   position: relative;
-  width: 200px;
+  width: 300px;
   left: 150px;
   margin-top: 16px;
+  opacity: 0;
 }
 /****************** Logo End ******************/
 
@@ -123,6 +124,7 @@ a {
 /****************** MainContainer ******************/
 .maincontainer {
   display: flex;
+  justify-content: space-between;
 }
 
 /*** Eastereggs ***/
@@ -266,7 +268,7 @@ a {
   position: relative;
   color: #fff;
   text-align: center;
-  left: 241px;
+  right: 200px;
   top: 205px;
 }
 
@@ -309,7 +311,7 @@ a {
   width: 260px;
   position: absolute;
   z-index: -1;
-  left: 1193px;
+  right: 250px;
 }
 
 /****************** Mascot END ******************/
