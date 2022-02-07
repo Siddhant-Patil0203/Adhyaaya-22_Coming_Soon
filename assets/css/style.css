@@ -375,7 +375,7 @@ a {
 }
 @media screen and (max-width: 826px) {
   body {
-    background: rgb(8, 5, 44);
+    background: url("../img/bg3.png");
     background-size: cover;
   }
   .square1,
@@ -397,6 +397,9 @@ a {
   }
   .eastereggs video {
     width: 100%;
+  }
+  .titlecontent {
+    padding-right: 10px;
   }
 }
 /****************** Responsive END *****************/
